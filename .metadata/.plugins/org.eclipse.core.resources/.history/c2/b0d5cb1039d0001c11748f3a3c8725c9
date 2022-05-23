@@ -1,0 +1,59 @@
+package model;
+
+import java.util.ArrayList;
+import interfaces.*;
+
+public class Citerne implements Observable{
+	private double maximumValue;
+	private double currentValue;
+	private ArrayList<Observer> listObservers = new ArrayList<Observer>();   
+	public void addObserver (Observer o)
+	{
+		this.listObservers.add(o);
+	}
+	public Citerne(double rayon, double hauteur)
+	{
+		maximumValue = (3.14*rayon*rayon*hauteur)/1000;
+		currentValue=0.0;
+	}
+	public boolean add (double volume)
+	{
+		//A compléter
+		return false;
+	}
+	public boolean setVolume ( double pourc)
+	{
+		//A compléter
+		return false;
+	}
+	public boolean drain (double volume)
+	{      //A compléter
+		return false;
+	}
+	public double getCurrentVolume()
+	{
+		return currentValue;
+	}
+	public double getCurrentRate()
+	{
+		return (currentValue/maximumValue)*100;
+	}
+	public double getMaximumValue()
+	{
+		return maximumValue;
+	}
+	@Override
+    public void notifyObservers (Object v)
+	{  //A compléter
+	}
+	public String toString()
+	{
+		return "Current volume : " + currentValue + " litres (" + getCurrentRate() + "%)";
+	}
+	@Override
+	public void removeObservers() {
+		//A compléter
+		
+	}
+	
+}

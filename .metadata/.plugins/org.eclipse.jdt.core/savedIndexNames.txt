@@ -1,0 +1,4 @@
+INDEX VERSION 1.131+D:\java tp\Atelier7POOAACompleter\.metadata\.plugins\org.eclipse.jdt.core
+1067094681.index
+2199097120.index
+1865797976.index
